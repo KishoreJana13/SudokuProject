@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#errors {
+    color: rgb(45, 66, 227);
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    background-color: rgb(241, 189, 244);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 48px; 
+    height: 48px;
+    border:  1px solid rgb(255, 255, 255);
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    width: 44px; 
+    height: 44px;
+    border: 1px solid rgb(70, 70, 70);
+    margin: 2px;
+    background-color: rgb(253, 178, 253);
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected {
+    background-color: rgb(160, 20, 230);
+}
+
+.tile-start {
+    background-color: rgb(141, 18, 212);
+}
+
+.horizontal-line {
+    border-bottom: 1.2px solid rgb(0, 0, 0);
+}
+
+.vertical-line {
+    border-right: 1.2px solid rgb(0, 0, 0);
+}
