@@ -1,7 +1,7 @@
 
 var numSelected = null;
 var tileSelected = null;
-let ans=35;
+let ans=46;
 let count=0;
 var errors = 0;
 
