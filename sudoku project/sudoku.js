@@ -1,7 +1,8 @@
 
 var numSelected = null;
 var tileSelected = null;
-
+let ans=35;
+let count=0;
 var errors = 0;
 
 var board = [
@@ -87,6 +88,16 @@ function selectTile() {
 
         if (solution[r][c] == numSelected.id) {
             this.innerText = numSelected.id;
+            count++;
+            if (count == ans) {
+                document.body.innerHTML = "";
+                let h2 = document.createElement("h2");
+                h2.textContent = "Congratulations"; 
+                document.body.appendChild(h2);
+                h2.style.textAlign = "center";
+                h2.style.color = "orange";
+}
+
         }
         else {
             errors += 1;
